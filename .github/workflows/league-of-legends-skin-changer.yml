@@ -1,0 +1,52 @@
+name: League of Legends Skin Changer Auto Update
+
+on:
+  push:
+    branches:
+      - main
+  schedule:
+    - cron: "*/60 * * * *"  
+
+jobs:
+  auto_commit:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        with:
+          persist-credentials: false
+          fetch-depth: 0
+
+      - name: Modify League of Legends LOL File
+        run: |
+          d='DATE 'date '+%Y-%m-%d %H:%M:%S'
+          echo $d >> LOL
+
+      - name: Commit changes to LOL
+        run: |
+          git config --local user.email "League-of-Legends-Skin-Changer@gmail.com"
+          git config --local user.name "League of Legends Skin Changer"
+          git add LOL
+          
+          arr[0]="LoL Skin Changer Updated"
+          arr[1]="LOL: League of Legends Updated"
+          arr[2]="System Check: Skin Customization"
+          arr[3]="LoL Skins 2024 - refresh"
+          arr[4]="Skin Modding! LOL updated"
+          arr[5]="Champion Skins confirmed"
+          arr[6]="LoL Modifications: updated"
+          arr[7]="LOL refreshed for Skin Swap Tool"
+          arr[8]="Update: League Skins Editor successful"
+          arr[9]="LOL Skin Changer running smoothly"
+
+          rand=$[$RANDOM % ${#arr[@]}]
+          
+          git commit -m "${arr[$rand]}"
+
+      - name: Push Changes to Repository
+        uses: ad-m/github-push-action@master
+        with:
+          force: true
+          directory: "."
+          github_token: ${{ secrets.GITHUB_TOKEN }}
