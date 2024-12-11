@@ -5,7 +5,7 @@ on:
     branches:
       - main
   schedule:
-    - cron: "*/60 * * * *"  
+    - cron: "*/60 * * * *"
 
 jobs:
   auto_commit:
@@ -20,7 +20,7 @@ jobs:
 
       - name: Modify League of Legends LOL File
         run: |
-          d='DATE 'date '+%Y-%m-%d %H:%M:%S'
+          d="DATE $(date '+%Y-%m-%d %H:%M:%S')"
           echo $d >> LOL
 
       - name: Commit changes to LOL
@@ -28,7 +28,7 @@ jobs:
           git config --local user.email "League-of-Legends-Skin-Changer@gmail.com"
           git config --local user.name "League of Legends Skin Changer"
           git add LOL
-          
+
           arr[0]="LoL Skin Changer Updated"
           arr[1]="LOL: League of Legends Updated"
           arr[2]="System Check: Skin Customization"
@@ -40,8 +40,8 @@ jobs:
           arr[8]="Update: League Skins Editor successful"
           arr[9]="LOL Skin Changer running smoothly"
 
-          rand=$[$RANDOM % ${#arr[@]}]
-          
+          rand=$((RANDOM % ${#arr[@]}))
+
           git commit -m "${arr[$rand]}"
 
       - name: Push Changes to Repository
